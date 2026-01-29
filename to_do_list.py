@@ -56,8 +56,6 @@ def delete_item(item_id):
     global items
     items = [item for item in items if item["id"]!= item_id]
     return jsonify({"result" :"Item has been deleted successfully"})
-    
-
 
 if __name__ == "__main__":
     app.run(debug=True)
